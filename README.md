@@ -1,2 +1,2 @@
 # learning_stuff
-The prijects I made to learn new stuff
+The projects I made to learn new stuff
