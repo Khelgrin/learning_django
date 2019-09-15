@@ -1,21 +1,5 @@
 from django.shortcuts import render
-
-
-posts = [
-    {
-        'author': 'Khel',
-        'title': 'title1',
-        'content': 'first post',
-        'date': '21.10.2018'
-    },
-    {
-        'author': 'Khel2',
-        'title': 'title2',
-        'content': 'second post',
-        'date': '21.10.2019'
-    }
-]
-
+from .models import Post
 
 def home(request):
     """The render function from django.shotrcuts
@@ -24,10 +8,10 @@ def home(request):
     - render it,
     - pass that to the HTTP response"""
     context = {
-        'posts': posts
+        'posts': Post.objects.all()
     }
     return render(request, 'blog/home.html', context)
 
 
 def about(request):
-    return render(request, 'blog/about.html', {'title':'About'})
+    return render(request, 'blog/about.html', {'title': 'About'})
