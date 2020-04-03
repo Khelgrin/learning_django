@@ -1,0 +1,5 @@
+/django_project/blog/migrations/*
+/django_project/db.sqlite3
+**/__pycache__/
+**.pyc
+.idea
