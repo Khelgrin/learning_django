@@ -6,6 +6,7 @@ from . import views
 # specific locations on our page
 
 urlpatterns = [
-    path('', views.home, name='blog-home'),
+    path('', views.main, name='blog-main'),
+    path('blog/', views.home, name='blog-home'),
     path('about/', views.about, name='blog-about'),
 ]

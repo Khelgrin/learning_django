@@ -10,8 +10,12 @@ def home(request):
     context = {
         'posts': Post.objects.all()
     }
-    return render(request, 'blog/home.html', context)
+    return render(request, 'blog/blog.html', context)
 
 
 def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
+
+
+def main(request):
+    return render(request, 'blog/main.html', {'title': 'TR Home Page', 'custom_css': '1'})
