@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import Post
 
-def home(request):
+def blog(request):
     """The render function from django.shotrcuts
        is a shortcut for:
     - loading the template in,

@@ -2,6 +2,10 @@ body {
   background: #fafafa;
   color: #333333;
   margin-top: 5rem;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
